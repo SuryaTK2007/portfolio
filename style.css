@@ -1,0 +1,41 @@
+body{
+    background-color: #000000;
+    color: white;
+    margin: 0px;
+}
+table {
+    width: 90%;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 100px rgb(3, 159, 243);
+    margin: auto;
+}
+th, td {
+    border: 0.01px solid white;
+    text-align: center;
+    padding: 15px;
+    border: 3px groove whitesmoke;
+}
+
+h1 {
+    text-align: center;
+}
+
+.row1 {
+    text-align: center;
+}
+
+.row2 {
+    background-color: rgb(152, 153, 153);
+}
+
+.row {
+    text-align: center;
+}
+
+tr.row1 td {
+    transition: box-shadow 4s;
+}
+
+tr.row1:hover td {
+    box-shadow: 2px 2px 100px rgb(255, 1, 1);
+}
