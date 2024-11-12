@@ -76,7 +76,7 @@ main p{
 .skills-container {
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: 75px;
     margin:  50px;
 }
 
