@@ -201,6 +201,9 @@ main .cybersecurity:hover{
     transform: scale(1.2);
     cursor: pointer;
 }
+main h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 @keyframes slideLeft{
     from{transform: translateX(80%);}
 }
