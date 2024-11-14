@@ -136,6 +136,14 @@ main .CSS:hover{
     border-radius: 40px;
     box-shadow: 2px 2px 20px rgb(59, 186, 237);
 }
+main .JS{
+    transition: 1s;
+}
+main .JS:hover{
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 20px rgb(123, 132, 233);
+}
 main .DataBase{
     border: 2px solid white;
     padding: 20px;
