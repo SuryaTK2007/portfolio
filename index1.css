@@ -193,6 +193,14 @@ main .ethical:hover{
     border-radius: 40px;
     box-shadow: 2px 2px 20px rgb(177, 115, 228);
 }
+main .Kali{
+    transition: 1s;
+}
+main .Kali:hover{
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 20px rgb(123, 233, 163);
+}
 main .Programming:hover {
     transform: scale(1.2);
     cursor: pointer;
