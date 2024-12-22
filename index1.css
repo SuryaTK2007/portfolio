@@ -49,7 +49,7 @@ header a{
     color: whitesmoke;
     font-size: 1.5rem;
     display: inline-block;
-    transition: font-size 2s;
+    transition: font-size 1s;
     margin-right: 0;
 }
 header:hover{
@@ -85,7 +85,7 @@ main .Programming{
     padding: 20px;
     border-radius: 40px;
     transition: 1.5s;
-    box-shadow: 2px 2px 20px rgba(151, 206, 238, 0.93);
+    box-shadow: 2px 2px 20px rgb(105, 199, 237);
     flex: 1;
 }
 main .C{
@@ -102,7 +102,7 @@ main .Cpp{
 main .Cpp:hover{
     padding: 10px;
     border-radius: 40px;
-    box-shadow: 2px 2px 20px rgb(59, 186, 237);
+    box-shadow: 2px 2px 20px rgb(105, 199, 237);
 }
 main .Python{
     transition: 1s;
@@ -117,7 +117,7 @@ main .Web{
     padding: 20px;
     border-radius: 40px;
     transition: 1.5s;
-    box-shadow: 2px 2px 20px rgb(177, 115, 228);
+    box-shadow: 2px 2px 20px rgb(105, 199, 237);
     flex: 1;
 }
 main .HTML{
@@ -149,7 +149,7 @@ main .DataBase{
     padding: 20px;
     border-radius: 40px;
     transition: 1.5s;
-    box-shadow: 2px 2px 20px rgb(22, 182, 226);
+    box-shadow: 2px 2px 20px rgb(105, 199, 237);
     flex: 1;
 }
 main .mysql{
@@ -174,7 +174,7 @@ main .cybersecurity{
     padding: 20px;
     border-radius: 40px;
     transition: 1.5s;
-    box-shadow: 2px 2px 20px rgb(80, 154, 238);
+    box-shadow: 2px 2px 20px rgb(105, 199, 237);
     flex: 1;
 }
 main .networking{
