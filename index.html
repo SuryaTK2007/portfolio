@@ -65,8 +65,62 @@
                 <br>
             </section>
             <section id="about">
-                 <img src="Surya photo1.jpg" alt="Surya" class="surya">
+                <img src="Surya photo1.jpg" alt="Surya" class="surya">
+                <div class="about-content">
+                    <h2><strong>Surya T.K.</strong> <em>College Student | Aspiring Cybersecurity Beginner| Coder | Photography Enthusiast</em></h2>
+                    <p>
+                        I am currently pursuing a Bachelor of Engineering (B.E.) in Computer Science at Sri Eshwar College of Engineering. With a keen interest in cybersecurity, ethical hacking, and programming, I continuously explore new technologies and languages.
+                    </p>
+                    <p>
+                        I have experience with C, Python, MySQL, MongoDB, C++, HTML, and CSS, and I enjoy solving complex problems, especially in data structures and algorithms. I aim to apply my skills in real-world cybersecurity scenarios and contribute to creating secure systems.
+                    </p>
+                </div>
             </section>
         </main>
+        <script>
+            function createFirework(x, y) {
+                const firework = document.createElement('div');
+                firework.className = 'firework';
+                firework.style.left = x + 'px';
+                firework.style.top = y + 'px';
+        
+                const colors = ['#ff0', '#f0f', '#0ff', '#ff4444', '#44ff44'];
+                for (let i = 0; i < 30; i++) {
+                    const particle = document.createElement('div');
+                    particle.className = 'particle';
+                    
+                    const angle = (Math.random() * Math.PI * 2);
+                    const distance = Math.random() * 100 + 50;
+                    
+                    const tx = Math.cos(angle) * distance;
+                    const ty = Math.sin(angle) * distance;
+                    
+                    particle.style.setProperty('--tx', `${tx}px`);
+                    particle.style.setProperty('--ty', `${ty}px`);
+                    particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    
+                    firework.appendChild(particle);
+                }
+        
+                document.body.appendChild(firework);
+        
+                setTimeout(() => {
+                    document.body.removeChild(firework);
+                }, 1000);
+            }
+        
+            window.addEventListener('load', () => {
+                const width = window.innerWidth;
+                const height = window.innerHeight;
+        
+                for (let i = 0; i < 5; i++) {
+                    setTimeout(() => {
+                        const x = Math.random() * width;
+                        const y = Math.random() * (height / 2);
+                        createFirework(x, y);
+                    }, i * 300);
+                }
+            });
+        </script>
     </body>
 </html>

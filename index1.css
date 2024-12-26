@@ -223,12 +223,65 @@ main h1{
 }
 #about img{
     border-radius: 20px;
-    animation-name: slideLeft;
+    animation-name: slideRight;
     animation-duration: 2s;
     height: 350px;
     width: 270px;
     margin: 50px;
-    transition: transform 0.5s ease-out;
+    transition:2s;
+}
+#about img:hover{
+    transform: scale(1.1);
+}
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px;
+}
+
+.about-content {
+    max-width: 600px;
+    line-height: 1.8;
+    animation-name: slideLeft;
+    animation-duration: 5s;
+}
+.about-content h2 {
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+.firework {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    animation: explode 1s ease-out forwards;
+}
+
+@keyframes explode {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--tx), var(--ty));
+        opacity: 0;
+    }
+}
+
+.main {
+    position: relative;
+    z-index: 1;
 }
 @keyframes slideLeft{
     from{transform: translateX(80%);}
